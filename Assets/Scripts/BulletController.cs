@@ -23,7 +23,6 @@ public class BulletController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        Destroy(other.gameObject);
         DestroyBullet();
     }
 }
