@@ -572,7 +572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccb0399e1c1e092469a1d4a3b47e5451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapFilePath: Assets/Maps/OnlyNow-N.json
+  mapFilePath: Assets/Maps/EyesClosed-N.json
 --- !u!4 &432667353
 Transform:
   m_ObjectHideFlags: 0
@@ -615,7 +615,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 06c71ae13d743e84da8206ffedeae5e4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a0b1ddc563fd5394ea3181c6c4480ad1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
