@@ -6,7 +6,7 @@ using UnityEngine;
 public class AimMusicMapReader : MonoBehaviour
 {
     public string mapFilePath;
-    
+
     [System.Serializable]
     private class Map
     {
@@ -27,8 +27,8 @@ public class AimMusicMapReader : MonoBehaviour
 
     private void Awake()
     {
-        string json = System.IO.File.ReadAllText(mapFilePath);
-        Map map = JsonUtility.FromJson<Map>(json);
+        TextAsset mapData = Resources.Load<TextAsset>(mapFilePath);
+        Map map = JsonUtility.FromJson<Map>(mapData.text);
 
         _notes = map._notes;
         _bpm = map._bpm;
@@ -38,7 +38,7 @@ public class AimMusicMapReader : MonoBehaviour
     {
         return _notes;
     }
-    
+
     public int GetBpm()
     {
         return _bpm;
